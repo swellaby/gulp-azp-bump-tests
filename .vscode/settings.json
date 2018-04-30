@@ -1,0 +1,10 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/node_modules": true,
+        "npm-debug.log": true,
+        "**/*.tar*": true,
+        "**/*.tgz": true,
+        "**/.testresults/": true,
+    }
+}
