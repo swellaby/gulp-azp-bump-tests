@@ -1,5 +1,6 @@
 --ui tdd
---timeout 10000
+--timeout 12500
+--slow 9500
 -R mocha-multi
 --reporter-options spec=-,xunit=.testresults/xunit.xml
 --recursive

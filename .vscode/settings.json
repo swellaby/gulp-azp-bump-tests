@@ -6,5 +6,6 @@
         "**/*.tar*": true,
         "**/*.tgz": true,
         "**/.testresults/": true,
+        "**/.testcontext/": true
     }
 }
