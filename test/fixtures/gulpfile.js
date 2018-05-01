@@ -5,6 +5,7 @@ const vstsBump = require('gulp-vsts-bump');
 /* eslint-disable no-unused-vars */
 const tasksGlob = 'tasks/**/task.json';
 const releaseGulpTasks = require('./release-type/gulp');
+const propertyTypeGulpTasks = require('./property-type/gulp');
 const quietGulpTasks = require('./quiet/gulp');
 /* eslint-enable no-unused-vars */
 
