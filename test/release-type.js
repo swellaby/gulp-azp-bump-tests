@@ -8,10 +8,10 @@ suite('release-type Suite:', () => {
     test('Should bump patch by default', () => {
         const result = utils.runGulpTaskWithShelljs('bump:release:default');
         assert.deepEqual(result.code, utils.successfulReturnCode);
-        const task = utils.getTaskFromFile(releaseTypeDir + 'task.json');
-        assert.deepEqual(task.version.Major, 0);
-        assert.deepEqual(task.version.Minor, 1);
-        assert.deepEqual(task.version.Patch, 2);
+        const bumpedTask = utils.getTaskFromFile(releaseTypeDir + 'task.json');
+        assert.deepEqual(bumpedTask.version.Major, 0);
+        assert.deepEqual(bumpedTask.version.Minor, 1);
+        assert.deepEqual(bumpedTask.version.Patch, 2);
     });
 
     test('Should correctly bump patch version when specified', () => {

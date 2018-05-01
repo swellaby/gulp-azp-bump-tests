@@ -8,10 +8,10 @@ suite('property-type Suite:', () => {
     test('Should set property type to number by default', () => {
         const result = utils.runGulpTaskWithShelljs('bump:prop:default');
         assert.deepEqual(result.code, utils.successfulReturnCode);
-        const task = utils.getTaskFromFile(propertyTypeDir + 'original-string.json');
-        assert.deepEqual(task.version.Major, 0);
-        assert.deepEqual(task.version.Minor, 2);
-        assert.deepEqual(task.version.Patch, 8);
+        const bumpedTask = utils.getTaskFromFile(propertyTypeDir + 'original-string.json');
+        assert.deepEqual(bumpedTask.version.Major, 0);
+        assert.deepEqual(bumpedTask.version.Minor, 2);
+        assert.deepEqual(bumpedTask.version.Patch, 8);
     });
 
     test('Should correctly bump with number properties when specified', () => {
