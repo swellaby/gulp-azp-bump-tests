@@ -14,30 +14,30 @@ suite('release-type Suite:', () => {
         assert.deepEqual(task.version.Patch, 2);
     });
 
-    test('Should bump patch when specified', () => {
+    test('Should correctly bump patch version when specified', () => {
         const result = utils.runGulpTaskWithShelljs('bump:release:patch');
         assert.deepEqual(result.code, utils.successfulReturnCode);
-        const task = utils.getTaskFromFile(releaseTypeDir + 'patch.json');
-        assert.deepEqual(task.version.Major, 0);
-        assert.deepEqual(task.version.Minor, 1);
-        assert.deepEqual(task.version.Patch, 5);
+        const bumpedTask = utils.getTaskFromFile(releaseTypeDir + 'patch.json');
+        assert.deepEqual(bumpedTask.version.Major, 0);
+        assert.deepEqual(bumpedTask.version.Minor, 1);
+        assert.deepEqual(bumpedTask.version.Patch, 5);
     });
 
-    test('Should correctly bump minor version', () => {
+    test('Should correctly bump minor version when specified', () => {
         const result = utils.runGulpTaskWithShelljs('bump:release:minor');
         assert.deepEqual(result.code, utils.successfulReturnCode);
-        const task = utils.getTaskFromFile(releaseTypeDir + 'minor.json');
-        assert.deepEqual(task.version.Major, 0);
-        assert.deepEqual(task.version.Minor, 3);
-        assert.deepEqual(task.version.Patch, 0);
+        const bumpedTask = utils.getTaskFromFile(releaseTypeDir + 'minor.json');
+        assert.deepEqual(bumpedTask.version.Major, 0);
+        assert.deepEqual(bumpedTask.version.Minor, 3);
+        assert.deepEqual(bumpedTask.version.Patch, 0);
     });
 
-    test('Should correctly bump major version', () => {
+    test('Should correctly bump major version when specified', () => {
         const result = utils.runGulpTaskWithShelljs('bump:release:major');
         assert.deepEqual(result.code, utils.successfulReturnCode);
-        const task = utils.getTaskFromFile(releaseTypeDir + 'major.json');
-        assert.deepEqual(task.version.Major, 2);
-        assert.deepEqual(task.version.Minor, 0);
-        assert.deepEqual(task.version.Patch, 0);
+        const bumpedTask = utils.getTaskFromFile(releaseTypeDir + 'major.json');
+        assert.deepEqual(bumpedTask.version.Major, 2);
+        assert.deepEqual(bumpedTask.version.Minor, 0);
+        assert.deepEqual(bumpedTask.version.Patch, 0);
     });
 });
