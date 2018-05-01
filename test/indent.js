@@ -13,8 +13,6 @@ suite('indent Suite:', () => {
         assert.deepEqual(bumpedTask.version.Major, 0);
         assert.deepEqual(bumpedTask.version.Minor, 1);
         assert.deepEqual(bumpedTask.version.Patch, 2);
-        // const bumpedTaskContents = utils.getFileContents(bumpedTaskFilePath);
-        // console.log('bumped task file contents: ' + bumpedTaskContents);
     });
 
     test('Should set indent to tab when specified', () => {
