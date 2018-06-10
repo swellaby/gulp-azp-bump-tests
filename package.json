@@ -1,7 +1,7 @@
 {
     "name": "gvb-tests",
     "description": "functional tests for our gulp-vsts-bump module",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "private": true,
     "license": "MIT",
     "scripts": {
@@ -17,7 +17,7 @@
         "target:install:file": "npm i --no-save"
     },
     "devDependencies": {
-        "@swellaby/eslint-config": "^1.1.5",
+        "@swellaby/eslint-config": "^1.1.6",
         "chai": "^4.1.2",
         "eslint": "^4.19.1",
         "gulp": "^3.9.1",
