@@ -1,7 +1,5 @@
 {
   "extends": [
-    "config:base",
-    ":preserveSemverRanges"
-  ],
-  "rangeStrategy": "replace"
+    "@swell"
+  ]
 }
