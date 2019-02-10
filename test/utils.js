@@ -14,7 +14,7 @@ const buildGulpTaskCommand = (taskName) => {
 
 const runGulpTaskWithShelljs = (gulpTaskName) => {
     const commandName = buildGulpTaskCommand(gulpTaskName);
-    return shell.exec(commandName, { silent: true });
+    return shell.exec(commandName, { silent: false });
 };
 
 const getFileContents = (filePath) => {
