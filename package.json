@@ -1,7 +1,7 @@
 {
-  "name": "gvb-tests",
-  "description": "functional tests for our gulp-vsts-bump module",
-  "version": "0.0.4",
+  "name": "gulp-azp-bump-tests",
+  "description": "functional tests for our gulp-azp-bump module",
+  "version": "0.0.5",
   "private": true,
   "license": "MIT",
   "scripts": {
@@ -10,9 +10,9 @@
     "pretest": "npm run clean && ncp test/fixtures/ .testcontext/",
     "test": "mocha",
     "gulp": "cd .testcontext && gulp",
-    "target:remove": "npm r gulp-vsts-bump",
+    "target:remove": "npm r gulp-azp-bump",
     "pretarget:install": "npm run target:remove",
-    "target:install": "npm i --no-save gulp-vsts-bump",
+    "target:install": "npm i --no-save gulp-azp-bump",
     "pretarget:install:file": "npm run target:remove",
     "target:install:file": "npm i --no-save"
   },
