@@ -1,0 +1,39 @@
+{
+  "version": "0.1",
+  "language": "en",
+  "words": [
+    "appdata",
+    "appveyor",
+    "bumpresult",
+    "bumptask",
+    "bumptaskmanifestfiles",
+    "bumptasks",
+    "circleci",
+    "codebases",
+    "codecov",
+    "devops",
+    "dsonar",
+    "istanbuljs",
+    "lcov",
+    "lifecycle",
+    "mocharc",
+    "opensource",
+    "repo",
+    "repos",
+    "sinonjs",
+    "sonar",
+    "sonarcloud",
+    "sonarqube",
+    "swellaby",
+    "tagless",
+    "testcontext",
+    "testresults",
+    "veyor",
+    "vsts",
+    "vststask",
+    "xunit"
+  ],
+  "flagWords": [
+
+  ]
+}
